@@ -5,6 +5,6 @@ export interface Book {
     discountRate: number;
     coverImage: string;
     price: number;
-    // Add more properties as needed
+
   }
   

@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { Book } from '../../../types/Book';
-import BookDetails from '../../organisms/DetailPage';
+import BookDetails from '../../organisms/BookDetail';
 
 interface CardProps {
   book: Book;

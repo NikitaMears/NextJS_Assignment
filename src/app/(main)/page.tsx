@@ -1,4 +1,4 @@
-import BookList from "../components/molecules/BookList";
+import BookList from "../../components/molecules/BookList";
 
 export default function Home() {
 

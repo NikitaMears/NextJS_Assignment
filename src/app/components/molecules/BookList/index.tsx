@@ -2,7 +2,7 @@
 import React, { useMemo } from 'react';
 import Card from '../../atoms/Card';
 import { Book } from '@/app/types/Book';
-import { useGetBookListQuery } from '@/app/(main)/booklist/booklist.query';
+import { useGetBookListQuery } from '../../../hooks/bookList.query';
 
 
 
@@ -14,7 +14,7 @@ const BookList = () => {
 
   return (
     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
-      {books?.map((book) => (
+      {books?.map((book: Book) => (
         <Card key={book.id} book={book} />
       ))}
     </div>

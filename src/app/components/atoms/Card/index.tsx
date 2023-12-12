@@ -2,7 +2,7 @@
 import React, { useState } from 'react';
 import { Book } from '../../../types/Book';
 import Link from 'next/link';
-import BookDetails from '../../detail-page';
+import BookDetails from '../../organisms/DetailPage';
 
 interface CardProps {
   book: Book;
@@ -20,7 +20,7 @@ const Card: React.FC<CardProps> = ({ book }) => {
   return (
     <>
     <div className="bg-white p-4 rounded shadow-md">
-        <h1>{book.title}</h1>
+     
         {/* <Link href={{pathname:'detail', query:{books:book}}}> */}
       <img src={book.coverImage} alt={book.title} className="w-full h-auto" />
         {/* </Link> */}
